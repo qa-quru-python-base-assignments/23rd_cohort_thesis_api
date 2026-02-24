@@ -1,13 +1,12 @@
 import allure
-import pytest
 from jsonschema import validate
 
+from schemas.common import api_response_schema
 from schemas.pet import (
     create_pet_request_schema,
     pet_response_schema,
     pets_list_response_schema,
 )
-from schemas.common import api_response_schema
 
 
 @allure.feature("Pet")

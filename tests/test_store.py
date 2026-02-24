@@ -1,12 +1,11 @@
 import allure
-import pytest
 from jsonschema import validate
 
+from schemas.common import api_response_schema
 from schemas.store import (
     create_order_request_schema,
     order_response_schema,
 )
-from schemas.common import api_response_schema
 
 
 @allure.feature("Store")
